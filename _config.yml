@@ -7,39 +7,39 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 name: DLyn
 # 描述/签名
-description: Hello DLyn
+description: Hello DLyn; No zuo no die, you try then cry...
 
 #
 # 下面的设定都是可选的
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+avatar: https://i.loli.net/2019/06/21/5d0c88abb398e11905.png
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
+favicon: https://i.loli.net/2019/06/21/5d0c88e83633767619.png
 
 
 # 菜单中的按钮
 navigation:
   - name: HOME
     url: /
-  - name: CODE
-    url: /code
-  - name: PHOTO
-    url: /photo
+  - name: ARCHIVE
+    url: /archive
   - name: TAGS
     url: /tags
+  - name: ABOUT
+    url: /about
 
 # 每页的文章数
 paginate: 8
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
-footer-links: 
+footer-links:
   weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<>
   dribbble: # https://dribbble.com/<>
-  email: fromendworld@outlook.com 
+  email: fromendworld@outlook.com
   facebook: #https://www.facebook.com/<>
   flickr: #https://www.flickr.com/<>
   github: FromEndWorld/loffer #https://github.com/<>
@@ -49,7 +49,7 @@ footer-links:
   rss: #随便填点啥RSS就能用了
   stackoverflow: # http://stackoverflow.com/<>
   tumblr: # https://<username>.tumblr.com
-  twitter: # https://www.twitter.com/<your_twitter_username> 
+  twitter: # https://www.twitter.com/<your_twitter_username>
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
@@ -62,7 +62,7 @@ disqus: loffer #shortname
 google_analytics:
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
-url: 
+url:
 
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
