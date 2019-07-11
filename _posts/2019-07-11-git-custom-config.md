@@ -4,7 +4,7 @@ title: GIT 常用设置
 date: 2019-07-11
 Author: DLyn
 categories: 
-tags: [git, 开发环境]
+tags: [开发环境, git]
 comments: true
 ---
 

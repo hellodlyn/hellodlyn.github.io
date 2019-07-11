@@ -4,7 +4,7 @@ title: SpaceVim安装以及配置
 date: 2019-07-11
 Author: DLyn
 categories: 
-tags: [linux, spacevim, 开发环境]
+tags: [开发环境, linux, vim]
 comments: true
 ---
 ### 1. 安装

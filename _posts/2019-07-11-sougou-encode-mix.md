@@ -4,7 +4,7 @@ title: Linux搜狗输入法候选词乱码
 date: 2019-07-11
 Author: DLyn
 categories: 
-tags: [linux, 乱码, 开发环境]
+tags: [开发环境, linux, 输入法]
 comments: true
 ---
 
