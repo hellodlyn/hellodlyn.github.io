@@ -30,12 +30,12 @@ Windows
 ```
 - **配置绝对行号**
 
-``` toml
+```
 [options]
     relativenumber = false
 ```
 - **配置语言支持**
-``` toml
+```
 # vue
 [[layers]]
     name = 'lang#vue'
