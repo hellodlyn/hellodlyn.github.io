@@ -25,6 +25,7 @@ Windows
 
 ### 2. 配置
 - **配置文件位置**
+
 ```
  ~/.SpaceVim.d/init.toml
 ```
@@ -35,6 +36,7 @@ Windows
     relativenumber = false
 ```
 - **配置语言支持**
+
 ```
 # vue
 [[layers]]
