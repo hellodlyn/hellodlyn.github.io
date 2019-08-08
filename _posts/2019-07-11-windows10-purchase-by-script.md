@@ -4,7 +4,7 @@ title: window10激活-KSM激活服务器
 date: 2019-07-11
 Author: DLyn
 categories: 
-tags: [开发环境, windows]
+tags: [开发环境, windows, crack]
 comments: true
 ---
 
