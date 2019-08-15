@@ -17,6 +17,15 @@ export PATH="$PATH:/opt/android-studio/bin"
 export NVM_DIR="/home/dlyn/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 ```
+#### 常用配置
+```
+# set proxy
+alias setproxy='export ALL_PROXY=socks5://127.0.0.1:1080'
+alias unsetproxy='unset ALL_PROXY'
+
+# set open just like in OSX
+alias open='xdg-open'
+```
 #### Linux搜狗输入法候选词乱码
 
 ```
@@ -31,7 +40,7 @@ sudo rm -rf SogouPY* sogou*
 ```
 sudo apt install libcanberra-gtk-module
 ```
-2. 修改启动参数，添加--no-standbox
+2. 修改启动参数，添加--no-standbox (重启后需要重新登录和设置)
 
 ```
 sudo vim /usr/share/applications/netease-cloud-music.desktop
