@@ -40,7 +40,7 @@ sudo rm -rf SogouPY* sogou*
 ```
 sudo apt install libcanberra-gtk-module
 ```
-2. 修改启动参数，添加--no-standbox (重启后需要重新登录和设置)
+2. 修改启动参数，添加--no-standbox (重启后需要重新登录和   设置)
 
 ```
 sudo vim /usr/share/applications/netease-cloud-music.desktop
