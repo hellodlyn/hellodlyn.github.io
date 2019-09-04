@@ -25,6 +25,11 @@ alias unsetproxy='unset ALL_PROXY'
 
 # set open just like in OSX
 alias open='xdg-open'
+
+#　go env (version > 1.13)
+export GO111MODULE=on
+export GOPROXY=https://goproxy.io
+export GOPRIVATE=*.corp.example.com
 ```
 #### Linux搜狗输入法候选词乱码
 

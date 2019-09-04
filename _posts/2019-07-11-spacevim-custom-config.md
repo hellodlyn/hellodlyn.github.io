@@ -19,9 +19,8 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 curl -sLf https://spacevim.org/cn/install.sh | bash -s -- -h
 ```
 **Windows**
-Windows 
 
-下最快捷的安装方法是下载安装脚本 [install.cmd](https://spacevim.org/cn/install.cmd) 并运行。
+Windows 下最快捷的安装方法是下载安装脚本 [install.cmd](https://spacevim.org/cn/install.cmd) 并运行。
 
 ### 2. 配置
 - **配置文件位置**
@@ -29,15 +28,21 @@ Windows
 ```
  ~/.SpaceVim.d/init.toml
 ```
-- **配置绝对行号**
+- IDE相关配置
 
 ```
 [options]
+    # 配置绝对行号
     relativenumber = false
-```
-- **配置语言支持**
+    
+    # 状态显示
+    statusline_separator = "nil"
+    statusline_inactive_separator = "bar"
+    
+    # 文件列表位置 
+    filetree_direction = "left"
 
-```
+# 配置语言支持
 # vue
 [[layers]]
     name = 'lang#vue'

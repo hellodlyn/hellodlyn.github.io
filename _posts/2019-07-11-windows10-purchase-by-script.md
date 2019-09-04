@@ -13,10 +13,10 @@ win10专业版激活码使用方法：
 
 2、在命令提示符中依次输入：
 ```
-slmgr.vbs /upk （此时弹出窗口显未“已成功卸载了产品密钥”）
-slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX （弹出窗口提示：“成功的安装了产品密钥”）
-slmgr /skms zh.us.to （弹出窗口提示：“密钥管理服务计算机名成功的设置为 zh.us.to”）
-slmgr /ato （弹出窗口提示：“成功的激活了产品”）
+slmgr.vbs /upk （此时弹出窗口显未"已成功卸载了产品密钥"）
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX （弹出窗口提示:"成功的安装了产品密钥"）
+slmgr /skms zh.us.to （弹出窗口提示:"密钥管理服务计算机名成功的设置为 zh.us.to"）
+slmgr /ato （弹出窗口提示:"成功的激活了产品"）
 
 ```
 
