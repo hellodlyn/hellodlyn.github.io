@@ -7,7 +7,7 @@ categories:
 tags: [开发环境, linux, 用户管理]
 comments: true
 ---
-#### **用户组操作**
+#### 用户组操作
 路径：`/etc/group`
 ```bash
 Usage: groupadd [options] GROUP
@@ -52,13 +52,12 @@ groups apacheuser
 cat /etc/group
 ```
 - 有的linux系统没有/etc/group文件的，这个时候看下面的这个方法
-
 ```bash
 cat /etc/passwd |awk -F [:] '{print $4}' |sort|uniq | getent group |awk -F [:] '{print $1}'
 ```
 这里用到一个命令是getent,可以通过组ID来查找组信息,如果这个命令没有的话,那就很难查找,系统中所有的组了.
 
-#### **用户操作**
+#### 用户操作
 路径：`/etc/passwd`
 ```bash
 Usage: useradd [options] LOGIN  
