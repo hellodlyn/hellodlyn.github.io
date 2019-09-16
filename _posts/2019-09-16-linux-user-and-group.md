@@ -29,18 +29,20 @@ Options:
 # 增加一个test组
 groupadd test 
 ```
+
 2.修改组
 ```bash
 # 将test组的名子改成test2
 groupmod -n test2  test 
 ```
+
 3.删除组
 ```bash
 # 删除 组test2
 groupdel test2
 ```
-4.查看组
 
+4.查看组
 - 查看当前登录用户所在的组`groups`，查看`apacheuser`所在组
 ```bash
 groups apacheuser
@@ -89,7 +91,6 @@ Options:
 useradd test
 passwd test
 ```
-
 增加用户test，有一点要注意的，useradd增加一个用户后，不要忘了给他设置密码，不然不能登录的。
 
 2.修改用户
@@ -105,11 +106,13 @@ gpasswd -a test test2
 ```bash
 gpasswd -d test test2
 ``` 
+
 3.删除用户
 ```bash
 # 将test用户删除
 userdel test
 ```
+
 4.查看用户
 
 - 查看当前登录用户
