@@ -48,6 +48,7 @@ h1, h2, h3, h5 {
 
 h1 {
   font-size: 30px;
+
   a {
     color: inherit;
   }
@@ -79,6 +80,7 @@ a {
   color: $oc-teal-8;
   text-decoration: none;
   cursor: pointer;
+
   &:hover, &:active {
     color: $oc-teal-7;
   }
@@ -273,6 +275,7 @@ img {
   color: $selection-color;
   background: $selection-background-color;
 }
+
 ::selection {
   color: $selection-color;
   background: $selection-background-color;
@@ -282,12 +285,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 // Alignment
@@ -314,14 +317,14 @@ img {
 
 .wrapper-sidebar {
   width: 30%;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-color: $oc-gray-0;
-	height: 100%;
-	top: 0;
-	left:0;
-	position: fixed;
-	z-index: 4;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: $oc-gray-0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
   border-right: 1px solid $divider-color;
 
   @include mobile {
@@ -341,8 +344,9 @@ img {
     text-align: center;
   }
 }
+
 .site-info {
-  text-align:center;
+  text-align: center;
   margin: 100px auto 0;
 
   @include mobile {
@@ -352,7 +356,7 @@ img {
   }
 
   .site-avatar {
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     max-width: 240px;
     max-height: 240px;
@@ -389,8 +393,8 @@ img {
   }
 }
 
-.navlist{
-  text-align:center;
+.navlist {
+  text-align: center;
 }
 
 nav {
@@ -433,7 +437,7 @@ nav {
 
 // Posts
 
-.posts{
+.posts {
   margin: 40px;
 
   @include mobile {
@@ -508,7 +512,7 @@ nav {
 
 .entry {
   max-width: 1000px;
-} 
+}
 
 .pagination {
   border-top: 1px solid $divider-color;
@@ -525,6 +529,7 @@ nav {
   > .prev {
     float: left;
     width: 50%;
+
     a {
       color: $pagination-color;
       border: 1px solid $divider-color;
@@ -542,6 +547,7 @@ nav {
     float: right;
     text-align: right;
     width: 50%;
+
     a {
       color: $pagination-color;
       border: 1px solid $divider-color;
@@ -561,6 +567,7 @@ nav {
   a {
     color: $base-color;
   }
+
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
@@ -605,6 +612,7 @@ nav {
   a {
     color: $base-color;
   }
+
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
@@ -614,17 +622,16 @@ nav {
 }
 
 
-
 // Footer
 .wrapper-footer-desktop {
   margin-top: 50px;
   border-top: 1px solid $footer-border-color;
   background-color: $footer-background-color;
   position: absolute;
-  clear:both;
-  width:100%;
-  bottom:0;
-  
+  clear: both;
+  width: 100%;
+  bottom: 0;
+
   @include mobile {
     display: none;
   }
@@ -633,7 +640,7 @@ nav {
 
 .wrapper-footer-mobile {
   display: none;
-  
+
   @include mobile {
     display: block;
     width: 100%;
