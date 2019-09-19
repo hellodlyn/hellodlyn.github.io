@@ -4,7 +4,7 @@ title: 开发环境-下载依赖包过慢
 date: 2019-09-04
 Author: DLyn
 categories: 
-tags: [开发环境, proxy, 依赖包]
+tags: [开发环境, 镜像/代理, 依赖包]
 comments: true
 ---
 
