@@ -7,6 +7,9 @@ categories:
 tags: [颜色, 设计]
 comments: true
 ---
+收集与一些看起来比较舒服的配色
+
+以下，大厂出品，就算自己不好看，也不能说什么...
 
 - **Google - 谷歌**
 <table >
