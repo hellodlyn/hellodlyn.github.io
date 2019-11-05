@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18.414 18.415"
+     id="close">
+    <g>
+        <path d="M1.414,18.415L0,17L17,0l1.414,1.415L1.414,18.415z"></path>
+        <path d="M17,18.415L18.414,17l-17-17L0,1.415L17,18.415z"></path>
+    </g>
+</svg>

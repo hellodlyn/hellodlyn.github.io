@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 68.66667 68.66667"
+     id="header-find-tool">
+    <defs>
+        <linearGradient id="header-find-tool_linear-gradient" x1="10.056" y1="58.61067" x2="58.61067" y2="10.056"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#2b7ff5"></stop>
+            <stop offset="1" stop-color="#56e7ad"></stop>
+        </linearGradient>
+    </defs>
+    <title>iocns</title>
+    <circle cx="34.33333" cy="34.33333" r="34.33333" fill="url(#header-find-tool_linear-gradient)"></circle>
+    <path d="M27.23991,51.69882,17.376,41.83493c1.5289-2.51529,4.34011-2.98383,7.00336-1.38094l3.932,2.51529L28.274,22.77371a2.59,2.59,0,1,1,5.1737,0l.84409,9.22779,9.99482,3.35824A5.7892,5.7892,0,0,1,48.246,40.78643l.004,3.608a11.33706,11.33706,0,0,1-5.3495,9.63958h0C37.99679,57.0839,31.5307,55.891,27.23991,51.69882Z"
+          fill="#fff"></path>
+    <path d="M38.31348,29.76433a1.00005,1.00005,0,0,1-.82764-1.55957,8.19189,8.19189,0,1,0-13.58691,0A.99986.99986,0,0,1,22.2417,29.3239a10.19189,10.19189,0,1,1,16.90137,0A.99877.99877,0,0,1,38.31348,29.76433Z"
+          fill="#fff"></path>
+</svg>
+
+

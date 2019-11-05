@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.67 68.67" id="header-for-business">
+    <linearGradient id="header-for-business_a" gradientUnits="userSpaceOnUse" x1="-6148.157" y1="-10531.348"
+                    x2="-6099.602" y2="-10579.902" gradientTransform="rotate(180 -3044.773 -5260.645)">
+        <stop offset="0" stop-color="#ff931e"></stop>
+        <stop offset=".183" stop-color="#ec6b53"></stop>
+        <stop offset=".381" stop-color="#da4584"></stop>
+        <stop offset=".568" stop-color="#cc27ab"></stop>
+        <stop offset=".739" stop-color="#c112c7"></stop>
+        <stop offset=".888" stop-color="#bb05d8"></stop>
+        <stop offset="1" stop-color="#b900de"></stop>
+    </linearGradient>
+    <circle fill="url(#header-for-business_a)" cx="34.33" cy="34.33" r="34.33"></circle>
+    <path fill="#FFF"
+          d="M16.36 36.14h6V49.6h-6zm9.33-.88h6V49.6h-6zm9.34-2.67h6V49.6h-6zm9.33-7.95h6V49.6h-6zm-28.19 7.11l-.01-2.06 15.19-3.49 19.16-11.87.04 2.5-18.42 11.25z"></path>
+</svg>

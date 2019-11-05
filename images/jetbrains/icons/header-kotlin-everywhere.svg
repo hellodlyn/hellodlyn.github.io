@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="header-kotlin-everywhere">
+    <title>Everywhere</title>
+    <polygon
+            points="108.284 19.049 61.225 19.049 14.167 19.049 14.167 66.108 14.167 113.167 61.225 113.167 108.284 113.167 61.225 66.108 108.284 19.049"
+            fill="#fff582"></polygon>
+    <g>
+        <polygon points="114.167 13.167 67.108 60.225 20.049 60.225 67.108 13.167 114.167 13.167" fill="none"
+                 stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.65359"></polygon>
+        <polygon points="67.108 13.167 20.049 13.167 20.049 60.225 67.108 13.167" fill="none" stroke="#000"
+                 stroke-linecap="round" stroke-linejoin="round" stroke-width="0.65359"></polygon>
+        <polygon points="20.049 60.225 20.049 107.284 67.108 107.284 20.049 60.225" fill="none" stroke="#000"
+                 stroke-linecap="round" stroke-linejoin="round" stroke-width="0.65359"></polygon>
+        <polygon points="20.049 60.225 67.108 107.284 114.167 107.284 67.108 60.225 20.049 60.225" fill="none"
+                 stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.65359"></polygon>
+    </g>
+</svg>

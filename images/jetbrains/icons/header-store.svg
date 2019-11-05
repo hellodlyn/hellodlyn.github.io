@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 68.66667 68.66667"
+     id="header-store">
+    <defs>
+        <linearGradient id="header-store_linear-gradient" x1="10.056" y1="58.61067" x2="58.61067" y2="10.056"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#af21de"></stop>
+            <stop offset="1" stop-color="#ff6e00"></stop>
+        </linearGradient>
+    </defs>
+    <title>iocns</title>
+    <circle cx="34.33333" cy="34.33333" r="34.33333" fill="url(#header-store_linear-gradient)"></circle>
+    <path d="M54.41667,31.27075H14.25l4.24087,15.249a5.86743,5.86743,0,0,0,5.5954,4.10158H44.882a5.14673,5.14673,0,0,0,4.917-3.62626Z"
+          fill="#fff"></path>
+    <path d="M41.51174,36.34938a.99974.99974,0,0,1-1-1V26.6526a6.17822,6.17822,0,0,0-12.35645,0v8.69678a1,1,0,0,1-2,0V26.6526a8.17822,8.17822,0,0,1,16.35645,0v8.69678A.99974.99974,0,0,1,41.51174,36.34938Z"
+          fill="#fff"></path>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 68.66667 68.66667"
+     id="header-cpp">
+    <defs>
+        <linearGradient id="header-cpp_linear-gradient" x1="10.056" y1="58.61067" x2="58.61067" y2="10.056"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#2eb8dd"></stop>
+            <stop offset="1" stop-color="#d9ff00"></stop>
+        </linearGradient>
+    </defs>
+    <title>iocns</title>
+    <circle cx="34.33333" cy="34.33333" r="34.33333" fill="url(#header-cpp_linear-gradient)"></circle>
+    <polygon
+            points="31.993 24.092 39.843 24.092 39.843 16.242 44.575 16.242 44.575 24.092 52.425 24.092 52.425 28.824 44.575 28.824 44.575 36.673 39.843 36.673 39.843 28.824 31.993 28.824 31.993 24.092"
+            fill="#fff"></polygon>
+    <polygon
+            points="16.242 39.843 24.092 39.843 24.092 31.993 28.824 31.993 28.824 39.843 36.673 39.843 36.673 44.575 28.824 44.575 28.824 52.425 24.092 52.425 24.092 44.575 16.242 44.575 16.242 39.843"
+            fill="#fff"></polygon>
+</svg>
