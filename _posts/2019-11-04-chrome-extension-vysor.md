@@ -4,7 +4,7 @@ title: Chrome插件：Vysor
 date: 2019-11-04
 Author: DLyn
 categories: 
-tags: [Chrome插件, crack]
+tags: [Extension, crack]
 comments: true
 ---
 ### 手机投屏到电脑 - Chrome插件Vysor
