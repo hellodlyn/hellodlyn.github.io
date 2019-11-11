@@ -52,6 +52,13 @@ sudo vim /usr/share/applications/netease-cloud-music.desktop
 # 将界面中Exec的值改成netease-cloud-music --no-standbox %U
 ```
 
+#### 更改系统注册表
+```
+WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine winecfg
+WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine regedit fnt.reg
+WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine wineboot
+```
+
 #### 安装/卸载 .deb 文件
 适用于Kubuntu系统的安装文件后缀名为 .deb，因为Kubuntu与 Debian GNU/Linux 关系密切。你可以单独的下载和安装 .deb 文件。
 
