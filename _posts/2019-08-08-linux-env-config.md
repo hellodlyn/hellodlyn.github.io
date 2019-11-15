@@ -40,7 +40,8 @@ sudo rm -rf SogouPY* sogou*
 然后注销即可(注意，这里必须是注销，不注销直接重启并不管用)
 
 #### 网易云音乐启动不了
-1. 安装libcanberra-gtk-mod
+
+1. 安装 `libcanberra-gtk-mod`
 
 ```
 sudo apt install libcanberra-gtk-module
@@ -51,12 +52,43 @@ sudo apt install libcanberra-gtk-module
 sudo vim /usr/share/applications/netease-cloud-music.desktop
 # 将界面中Exec的值改成netease-cloud-music --no-standbox %U
 ```
+#### deepin-wine 微信小黑框
+
+1. 方法一：配置
+
+要解决这个问题，你需要两个工具：`wmctrl` 和 `xdotool`：
+
+```
+sudo apt-get install wmctrl
+sudo apt-get install xdotool
+wmctrl -l -G -p -x
+```
+此时可能看到如下的输出
+```
+0x02e00042  0 213    0    64   1    1    wechat.exe.Wine       87a07b194048 ChatContactMenu
+0x02e00044  0 213    1860 1020 60   60   wechat.exe.Wine       87a07b194048 
+0x02e00041  0 213    824  422  850  617  wechat.exe.Wine       87a07b194048 微信
+```
+这里，只有最后一个是有用的，其他两个应该隐藏。分别执行：`xdotool windowunmap 0x02e00042`  以及  `xdotool windowunmap 0x02e00044` 完美。
+
+2. 方法二：手动（麻烦，但是有效）
+打开一个微信群聊，输入@，然后删除，解决 ...
 
 #### 更改系统注册表
+
 ```
 WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine winecfg
 WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine regedit fnt.reg
 WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine wineboot
+```
+
+#### 字体安装
+
+```
+# 文泉系列字体
+sudo apt-get install ttf-wqy-microhei  #文泉驿-微米黑
+sudo apt-get install ttf-wqy-zenhei  #文泉驿-正黑
+sudo apt-get install xfonts-wqy #文泉驿-点阵宋体
 ```
 
 #### 安装/卸载 .deb 文件
