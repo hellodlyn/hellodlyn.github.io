@@ -82,8 +82,15 @@ WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine regedit fnt.reg
 WINEPREFIX=~/.deepinwine/Deepin-WeChat/ deepin-wine wineboot
 ```
 
-#### 字体安装
+#### 桌面图标存放位置
+```bash
+# 用戶
+/home/glink/.local/share/applications/
+# 系統
+/usr/share/applications
+```
 
+#### 字体安装
 ```
 # 文泉系列字体
 sudo apt-get install ttf-wqy-microhei  #文泉驿-微米黑

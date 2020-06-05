@@ -1,13 +1,23 @@
 ---
 layout: post
-title: Raspbian软件源镜像-清华大学
+title: 树莓派 Raspbian 开发环境设置
 date: 2019-09-18
 Author: DLyn
 categories: 
 tags: [开发环境, 树莓派, 镜像/代理]
 comments: true
 ---
-Raspbian 镜像使用帮助
+#### 树莓派 Raspbian 安装 Python3 的 PyQt5 运行环境
+树莓派`Raspbian`下使用 `pip3 install PyQt5` 无法正常安装，但其实官方apt已经提供了更简单的安装包。
+```bash
+sudo apt install -y python3-pyqt5
+```
+执行上述命令，即可安装PyQt5。但这个库默认不包含QtWebkit之类的组件，需要额外安装。所有额外组件一起安装，执行命令：
+```bash
+sudo apt install -y python3-pyqt5.qsci python3-pyqt5.qtmultimedia python3-pyqt5.qtopengl python3-pyqt5.qtpositioning python3-pyqt5.qtquick python3-pyqt5.qtsensors python3-pyqt5.qtserialport python3-pyqt5.qtsql python3-pyqt5.qtsvg python3-pyqt5.qtwebchannel python3-pyqt5.qtwebkit python3-pyqt5.qtwebsockets python3-pyqt5.qtx11extras python3-pyqt5.qtxmlpatterns
+```
+
+#### Raspbian软件源镜像-清华大学
 Debian 7 (wheezy)
 ```bash
 # 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：
