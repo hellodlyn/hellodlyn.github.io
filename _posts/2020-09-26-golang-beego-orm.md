@@ -34,17 +34,17 @@ CREATE TABLE `users` (
 ```go
 //定义User模型，绑定users表结构
 type User struct {
-	Id int
-	Username string
-	Password string  `json:"password"`
-	City string
-	// 驼峰式命名，会转换成表字段名，表字段名使用蛇形命名风格，即用下划线将单词连接起来
-	InitTime time.Time     // 对应字段init_time
+    Id int
+    Username string
+    Password string  `json:"password"`
+    City string
+    // 驼峰式命名，会转换成表字段名，表字段名使用蛇形命名风格，即用下划线将单词连接起来
+    InitTime time.Time     // 对应字段init_time
 }
 
 // 定义模型表名
 func (u *User) TableName() string {
-	return "users"
+    return "users"
 }
 ```
 
@@ -62,13 +62,13 @@ var users []User
 
 // 使用QuerySeter 对象构造查询条件，并执行查询。
 num, err := qs.Filter("city", "shenzhen").  // 设置查询条件
-		Filter("init_time__gt", "2019-06-28 22:00:00"). // 设置查询条件
-		Limit(10). // 限制返回行数
-		All(&users, "id", "username") // All 执行查询，并且返回结果，这里指定返回id和username字段，结果保存在users变量
+        Filter("init_time__gt", "2019-06-28 22:00:00"). // 设置查询条件
+        Limit(10). // 限制返回行数
+        All(&users, "id", "username") // All 执行查询，并且返回结果，这里指定返回id和username字段，结果保存在users变量
 // 上面代码的等价sql: SELECT T0.`id`, T0.`username` FROM `users` T0 WHERE T0.`city` = 'shenzhen' AND T0.`init_time` > '2019-06-28 22:00:00' LIMIT 10
 
 if err != nil {
-	panic(err)
+    panic(err)
 }
 fmt.Println("结果行数:", num)
 ```
@@ -171,9 +171,9 @@ var users []User
 // 使用QuerySeter 对象构造查询条件，并执行查询。
 // 等价sql: select * from users where id > 1 and id < 100 limit 10
 num, err := qs.Filter("Id__gt", 1).
-		Filter("Id__lt", 100).
-		Limit(10). // 限制返回行数
-		All(&users) // 返回多行数据， 也可以设置返回指定字段All(&users, "id", "username")
+        Filter("Id__lt", 100).
+        Limit(10). // 限制返回行数
+        All(&users) // 返回多行数据， 也可以设置返回指定字段All(&users, "id", "username")
 ```
 
 ### 3.2.查询一行数据
@@ -210,14 +210,14 @@ var users []User
 // 使用QuerySeter 对象构造查询条件，并执行查询。
 // 等价sql: select * from users where id > 1 and id < 100 group by city order by init_time desc limit 10
 num, err := qs.Filter("Id__gt", 1).
-		Filter("Id__lt", 100).
-		GroupBy("City").   // 根据city字段分组
-		OrderBy("-InitTime").   // order by字段名前面的减号 - , 代表倒序。
-		Limit(10). // 限制返回行数
-		All(&users)
+        Filter("Id__lt", 100).
+        GroupBy("City").   // 根据city字段分组
+        OrderBy("-InitTime").   // order by字段名前面的减号 - , 代表倒序。
+        Limit(10). // 限制返回行数
+        All(&users)
 
 if err != nil {
-	panic(err)
+    panic(err)
 }
 fmt.Println("结果行数:", num)
 ```
@@ -244,24 +244,24 @@ type Article struct {
     Id          int
     Title       string
     CreatedAt   time.Time
-    Content 	string
-    User        *User 	`orm:"rel(fk)"` // 设置关联
-    Media       *Media 	`orm:"rel(fk)"` 
+    Content     string
+    User        *User     `orm:"rel(fk)"` // 设置关联
+    Media       *Media     `orm:"rel(fk)"` 
 }
 // Article中实际字段至少要包含：id,title,created_at,content,user_id,media_id;
 // 假设Article中有字段 Media2 *Media `orm:"rel(fk)"`，此处连接条件为相当于 ON Article.media2_id = Media.id
 
 func (u *Article) TableName() string {
-	return "article"
+    return "article"
 }
 
 type Media struct {
-	Id 			int
-	Url 		string
+    Id     int
+    Url    string
 }
 
 func (u *Media) TableName() string {
-	return "media"
+    return "media"
 }
 
 // RelatedSel("Media") 关联查询Media表中的数据
