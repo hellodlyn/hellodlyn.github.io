@@ -82,18 +82,18 @@ beego orm针对QuerySeter设置一套查询表达式，用于编写查询条件�
 **表达式格式1**：
 
 ```go
-qs.Filter("id", 1) 				// 相当于条件 id = 1
+qs.Filter("id", 1)              // 相当于条件 id = 1
 ```
 
 **表达式格式2**：
 使用**双下划线** __ 作为分隔符，尾部连接操作符
 
 ```go
-qs.Filter("id__gt", 1) 			// 相当于条件 id > 1
-qs.Filter("id__gte", 1) 		// 相当于条件 id >= 1
-qs.Filter("id__lt", 1) 			// 相当于条件 id < 1
-qs.Filter("id__lte", 1) 		// 相当于条件 id <= 1
-qs.Filter("id__in", 1,2,3,4,5) 	// 相当于In语句 id in (1,2,3,4,5)
+qs.Filter("id__gt", 1)          // 相当于条件 id > 1
+qs.Filter("id__gte", 1)         // 相当于条件 id >= 1
+qs.Filter("id__lt", 1)          // 相当于条件 id < 1
+qs.Filter("id__lte", 1)         // 相当于条件 id <= 1
+qs.Filter("id__in", 1,2,3,4,5)  // 相当于In语句 id in (1,2,3,4,5)
 ```
 
 下面是支持的操作符：
@@ -110,16 +110,16 @@ qs.Filter("id__in", 1,2,3,4,5) 	// 相当于In语句 id in (1,2,3,4,5)
 例子:
 
 ```go
-qs.Filter("Username", "大锤") 				// 相当于条件 name = '大锤'
-qs.Filter("Username__exact", "大锤") 			// 相当于条件 name = '大锤'
-qs.Filter("Username__iexact", "大锤") 		// 相当于条件 name LIKE '大锤'
-qs.Filter("Username__iexact", "大锤") 		// 相当于条件 name LIKE '大锤'
-qs.Filter("Username__contains", "大锤") 		// 相当于条件 name LIKE BINARY '%大锤%', BINARY 区分大小写
-qs.Filter("Username__icontains", "大锤") 		// 相当于条件 name LIKE '%大锤%'
-qs.Filter("Username__istartswith", "大锤") 	// 相当于条件 name LIKE '大锤%'
-qs.Filter("Username__iendswith", "大锤") 		// 相当于条件 name LIKE '%大锤'
-qs.Filter("Username__isnull", true) 		  // 相当于条件 name is null
-qs.Filter("Username__isnull", false) 		  // 相当于条件 name is not null
+qs.Filter("Username", "大锤")                // 相当于条件 name = '大锤'
+qs.Filter("Username__exact", "大锤")         // 相当于条件 name = '大锤'
+qs.Filter("Username__iexact", "大锤")        // 相当于条件 name LIKE '大锤'
+qs.Filter("Username__iexact", "大锤")        // 相当于条件 name LIKE '大锤'
+qs.Filter("Username__contains", "大锤")      // 相当于条件 name LIKE BINARY '%大锤%', BINARY 区分大小写
+qs.Filter("Username__icontains", "大锤")     // 相当于条件 name LIKE '%大锤%'
+qs.Filter("Username__istartswith", "大锤")   // 相当于条件 name LIKE '大锤%'
+qs.Filter("Username__iendswith", "大锤")     // 相当于条件 name LIKE '%大锤'
+qs.Filter("Username__isnull", true)          // 相当于条件 name is null
+qs.Filter("Username__isnull", false)         // 相当于条件 name is not null
 ```
 
 多个Filter函数调用使用 **and** 连接查询条件。
@@ -241,14 +241,15 @@ fmt.Printf("总数: %s", num)
 
 ```go
 type Article struct {
-	Id 				int
-	Title 			string
-	CreatedAt 		time.Time
-	Content 		string
-    UserInfo 		*User 	`orm:"rel(fk)"` // 设置链接
-    MediaInfo 		*Media 	`orm:"rel(fk)"` 
+    Id          int
+    Title       string
+    CreatedAt   time.Time
+    Content 	string
+    User        *User 	`orm:"rel(fk)"` // 设置关联
+    Media       *Media 	`orm:"rel(fk)"` 
 }
 // Article中实际字段至少要包含：id,title,created_at,content,user_id,media_id;
+// 假设Article中有字段 Media2 *Media `orm:"rel(fk)"`，此处连接条件为相当于 ON Article.media2_id = Media.id
 
 func (u *Article) TableName() string {
 	return "article"
