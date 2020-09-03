@@ -61,3 +61,25 @@ ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 ```
 ProxyCommand connect -S 127.0.0.1:1080 %h %p
 ```
+
+### 其他配置
+```
+Host github.com
+    User git
+    Port 22
+    Hostname github.com
+    IdentityFile "/home/glink/.ssh/id_rsa"
+    TCPKeepAlive yes
+    ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
+
+Host ssh.github.com
+    User git
+    Port 443
+    Hostname ssh.github.com
+    IdentityFile "/home/glink/.ssh/id_rsa"
+    TCPKeepAlive yes
+    ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
+
+Host *
+    KexAlgorithms +diffie-hellman-group1-sha1
+```
