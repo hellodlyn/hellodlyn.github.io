@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Github访问代理设置
+title: Github仓库clone代理设置
 date: 2020-09-03
 Author: DLyn
 categories: 
