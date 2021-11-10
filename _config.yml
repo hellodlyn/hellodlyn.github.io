@@ -22,13 +22,13 @@ favicon: https://i.loli.net/2019/06/21/5d0c88e83633767619.png
 
 # 菜单中的按钮
 navigation:
-  - name: HOME
+  - name: 主页
     url: /
-  - name: ARCHIVE
+  - name: 归档
     url: /archive
-  - name: TAGS
+  - name: 标签
     url: /tags
-  - name: ABOUT
+  - name: 关于
     url: /about
 
 # 每页的文章数
