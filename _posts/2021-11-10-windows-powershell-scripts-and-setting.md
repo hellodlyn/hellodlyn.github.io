@@ -8,6 +8,25 @@ tags: [开发环境, Windows, Terminal]
 comments: true
 ---
 
+#### 1、环境安装
+```powershell
+# 设置网络代理
+netsh winhttp set proxy 127.0.0.1:1080
+
+# 安装模块
+Install-Module posh-git -Scope CurrentUser
+Install-Module DirColors -Scope CurrentUser
+Install-Module PSColor -Scope CurrentUser
+Install-Module PSReadLine -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+```
+
+#### 2. 在Powrshell下输入 ` $PROFILE`
+```powershell
+C:\Users\DLyn\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+```
+
+#### 3. 编辑Profile文件，更新下面内容
 ```powershell
 
 # 安装模块
@@ -55,7 +74,7 @@ function gogo {
 }
 
 function current {
-    cd E:/Workspace/Tiorb/TiorbTubo
+    cd E:/Workspace
 }
 
 function workspace {
