@@ -11,8 +11,10 @@ comments: true
 ## 分辨需要设置的代理
 
 - HTTP 形式：
+   
    > git clone https://github.com/owner/git.git
 - SSH 形式：
+   
    > git clone git@github.com:owner/git.git
 
 ## 一、HTTP 形式
@@ -54,11 +56,11 @@ Host github.com
 
 ### 额外说明
 对于Windows用户，要使用socks5代理却没有 nc 的，可以将
-```
+```powershell
 ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 ```
 换成
-```
+```powershell
 ProxyCommand connect -S 127.0.0.1:1080 %h %p
 ```
 

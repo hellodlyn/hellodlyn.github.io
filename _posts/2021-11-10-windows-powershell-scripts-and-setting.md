@@ -4,7 +4,7 @@ title: Windows下PowerShell的常用脚本以及命令设置
 date: 2021-11-10
 Author: DLyn
 categories: 
-tags: [开发环境, Windows, Terminal]
+tags: [开发环境, windows, terminal]
 comments: true
 ---
 
