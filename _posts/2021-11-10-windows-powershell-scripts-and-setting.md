@@ -14,11 +14,11 @@ comments: true
 netsh winhttp set proxy 127.0.0.1:1080
 
 # 安装模块
-Install-Module posh-git -Scope CurrentUser
+Install-Module posh-git -Scope AllUsers
 Install-Module DirColors -Scope CurrentUser
 Install-Module PSColor -Scope CurrentUser
-Install-Module PSReadLine -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
+Install-Module oh-my-posh -Scope AllUsers
+Install-Module -Name PSReadLine -Scope AllUsers -Force -SkipPublisherCheck
 ```
 
 #### 2. 在Powrshell下输入 ` $PROFILE`
@@ -183,4 +183,11 @@ function Get-ChildItem-All-Wide {
     )
     Get-ChildItem-All @PSBoundParameters | Format-Wide -AutoSize
 }
+```
+
+#### PS:运行出错尝试修改
+无法加载文件 ***，因为在此系统上禁止运行脚本。
+以管理员方式运行 windows terminal ，运行以下脚本
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
